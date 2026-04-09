@@ -1,0 +1,195 @@
+/* --- 1. CORE VARIABLES & RESET --- */
+:root {
+    --bg-dark: #020617;
+    --accent-teal: #2dd4bf;
+    --glass-bg: rgba(15, 23, 42, 0.6);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-gray: #94a3b8;
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- 2. THE HERO SECTION (RESPONSIVE) --- */
+#home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px; /* Space for mobile header */
+}
+
+/* The wrapper that holds text and image */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacked on Mobile */
+    align-items: center;
+    gap: 4rem;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Mobile: Image first, Text second */
+.image-container {
+    order: 1; 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    order: 2;
+    width: 100%;
+    text-align: center;
+}
+
+/* Desktop Styles (Triggered at 1024px) */
+@media (min-width: 1024px) {
+    .hero-wrapper {
+        flex-direction: row; /* Side-by-Side */
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .text-container {
+        order: 1; /* Text on Left */
+        width: 55%;
+        text-align: left;
+    }
+
+    .image-container {
+        order: 2; /* Image on Right */
+        width: 40%;
+        justify-content: flex-end;
+    }
+}
+
+/* --- 3. TYPOGRAPHY & BUTTONS --- */
+h1 {
+    /* Clamps font size: Min 2.5rem, Preferred 8vw, Max 6rem */
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.mono {
+    font-family: 'Space Mono', monospace;
+}
+
+.glow-cyan {
+    text-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+}
+
+/* Responsive Buttons */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Centered on mobile */
+}
+
+@media (min-width: 1024px) {
+    .btn-group {
+        justify-content: flex-start; /* Left-aligned on desktop */
+    }
+}
+
+/* --- 4. GLASS & IMAGE STYLES --- */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: 1.5rem;
+}
+
+.hero-img {
+    width: clamp(260px, 40vw, 380px); /* Scales based on screen width */
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: grayscale(100%);
+    transition: filter 0.7s ease;
+}
+
+.hero-img:hover {
+    filter: grayscale(0%);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(3deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.floating-frame {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* --- 5. SKILL BARS & INTERACTIVE --- */
+.skill-bar {
+    height: 4px;
+    background: #1e293b;
+    border-radius: 2px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-teal), #8b5cf6);
+    width: 0% !important; 
+    transition: width 2s cubic-bezier(0.17, 0.55, 0.55, 1) !important;
+}
+
+.hover-box {
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.hover-box:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-teal);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Styling */
+input, textarea {
+    width: 100%;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+/* --- 6. VISIBILITY --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
