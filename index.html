@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olowu Adeyinka — Product Designer & Front-End Developer</title>
+  <meta name="description" content="Portfolio of Olowu Adeyinka Ayomide — UI/UX Designer and Front-End Developer crafting polished digital experiences from Ibadan, Nigeria." />
+  <meta property="og:title" content="Olowu Adeyinka — Product Designer & Front-End Developer" />
+  <meta property="og:description" content="UI/UX Designer and Front-End Developer crafting polished digital experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div class="bg-atmo" aria-hidden="true">
+    <div class="bg-atmo__orb bg-atmo__orb--1"></div>
+    <div class="bg-atmo__orb bg-atmo__orb--2"></div>
+    <div class="bg-atmo__orb bg-atmo__orb--3"></div>
+  </div>
+
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="mobile-cta">Let's Talk</a>
+  </div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" aria-label="Home">OA<span>.</span></a>
+      <div class="nav-links" aria-label="Desktop navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          Available for opportunities
+        </p>
+        <h1 class="hero-name">
+          Olowu
+          <em>Adeyinka.</em>
+        </h1>
+        <p class="hero-desc">
+          I design intuitive digital products and engineer polished front-end
+          experiences — blending <strong>user-centered thinking</strong> with
+          clean, performant code to build interfaces that leave an impression.
+        </p>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">3<span>+</span></div>
+            <div class="hero-stat-label">Years of work</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">10<span>+</span></div>
+            <div class="hero-stat-label">Projects shipped</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">5<span>+</span></div>
+            <div class="hero-stat-label">Roles held</div>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View My Work</a>
+          <a class="btn btn-ghost" href="resume.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-hidden="true">
+        <div class="hero-photo-wrap">
+          <img src="luca.jpg" alt="Olowu Adeyinka Ayomide" loading="eager" />
+          <div class="hero-photo-overlay">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Open to work
+            </div>
+            <p class="hero-card-caption">
+              Designing with<br>purpose. Building<br>with precision.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <main>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div>
+            <p class="section-label reveal">About</p>
+            <h2 class="section-title reveal reveal-delay-1">
+              Crafting digital<br>experiences with
+              <em>intent.</em>
+            </h2>
+            <div class="about-body reveal reveal-delay-2">
+              <p>
+                I'm a <strong>Computer Science graduate</strong> from the University of Ibadan with a professional background spanning UI/UX design, front-end development, IT support, and administrative operations. I bridge the gap between design vision and engineering execution.
+              </p>
+              <p>
+                My work is grounded in <strong>user research, visual systems,</strong> and clean code — resulting in interfaces that feel natural to use and exceptional to look at. Whether refining a design system or building a responsive web product from scratch, I bring clarity and craft to every layer.
+              </p>
+            </div>
+            <div class="tools-strip reveal reveal-delay-3">
+              <p class="tools-strip-label">Tools & Technologies</p>
+              <div class="tools-list">
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/figma.svg" alt="" aria-hidden="true" />Figma</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/html5.svg" alt="" aria-hidden="true" />HTML5</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/css3.svg" alt="" aria-hidden="true" />CSS3</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg" alt="" aria-hidden="true" />JavaScript</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg" alt="" aria-hidden="true" />React</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/canva.svg" alt="" aria-hidden="true" />Canva</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/adobephotoshop.svg" alt="" aria-hidden="true" />Photoshop</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/coreldraw.svg" alt="" aria-hidden="true" />Corel Draw</span>
+                <span class="tool-chip"><img class="tool-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/microsoftoffice.svg" alt="" aria-hidden="true" />MS Office</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards reveal reveal-delay-2">
+            <div class="about-card">
+              <div class="about-card-icon">🎨</div>
+              <h4>UI / UX Design</h4>
+              <p>Wireframes, prototypes, and pixel-perfect visual systems that serve real users.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">⚡</div>
+              <h4>Front-End Dev</h4>
+              <p>Responsive, accessible, and performant interfaces built with modern web standards.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🧠</div>
+              <h4>Product Thinking</h4>
+              <p>Strategy-driven design focused on MVP scoping and measurable outcomes.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🤝</div>
+              <h4>Team Operations</h4>
+              <p>HR coordination, workflow optimisation, and cross-functional collaboration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ WORK ═══ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="work-header">
+          <div>
+            <p class="section-label reveal">Selected Work</p>
+            <h2 class="section-title reveal reveal-delay-1">Projects that<br>define the <em>craft.</em></h2>
+          </div>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="food.png" alt="Food Delivery App — UI/UX design screens" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+            <div class="project-body">
+              <p class="project-number">01</p>
+              <span class="project-type-tag">Mobile UI/UX · Product Design</span>
+              <h3>Food Delivery App</h3>
+              <p class="project-desc">
+                End-to-end mobile UI design for a food ordering platform — from onboarding and menu browsing to cart, checkout, payment, and real-time order tracking. A complete, cohesive design system with 10+ screens.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">Mobile UI</span>
+                <span class="project-tag">User Flows</span>
+                <span class="project-tag">Design System</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://www.figma.com" target="_blank" rel="noopener noreferrer">View on Figma ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-media">
+              <img src="mahad.png" alt="Mahad Travel Agency — Mobile app screens" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+            <div class="project-body">
+              <p class="project-number">02</p>
+              <span class="project-type-tag">Mobile UI/UX · Travel</span>
+              <h3>Mahad Travel Agency App</h3>
+              <p class="project-desc">
+                Designed a full-featured travel booking app for Mahad Travel Agency — featuring an onboarding experience, personalisation flow, secure sign-in, OTP email verification, and push notification preferences across 8+ polished screens.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">Onboarding UX</span>
+                <span class="project-tag">Auth Flows</span>
+                <span class="project-tag">Travel</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://www.figma.com" target="_blank" rel="noopener noreferrer">View on Figma ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-media">
+              <img src="ecommerce.png" alt="Luca Studio — E-commerce website landing page" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+            <div class="project-body">
+              <p class="project-number">03</p>
+              <span class="project-type-tag">E-Commerce · Front-End Development</span>
+              <h3>Luca Studio — E-Commerce Website</h3>
+              <p class="project-desc">
+                Built a fully responsive tech e-commerce storefront featuring a hero section, product catalogue, new arrivals, best sellers, and a trust perks bar — crafted with clean HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Responsive</span>
+                <span class="project-tag">E-Commerce</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://github.com" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-media" style="background: linear-gradient(135deg,#2e3f55,#576b92); height: 260px; display:grid; place-items:center;">
+              <div style="text-align:center; padding: 2rem;">
+                <div style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:700; color:#fff; margin-bottom:0.5rem;">Component Library</div>
+                <div style="font-family:'DM Mono',monospace; font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:#e0c26b;">Design System · Visual Language</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-number">04</p>
+              <span class="project-type-tag">Brand & Design System</span>
+              <h3>Component Library & Visual Language</h3>
+              <p class="project-desc">
+                Built a scalable token-based design system from scratch — aligning multi-disciplinary product teams, cutting design-to-dev handoff time, and ensuring brand consistency across all touchpoints.
+              </p>
+              <div class="project-tags-row">
+                <span class="project-tag">Design Tokens</span>
+                <span class="project-tag">Components</span>
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">Brand</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://www.figma.com" target="_blank" rel="noopener noreferrer">View on Figma ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="resume-layout">
+          <div>
+            <p class="section-label reveal">Experience</p>
+            <h2 class="section-title reveal reveal-delay-1">The work that<br>shaped my <em>edge.</em></h2>
+            <div class="timeline reveal reveal-delay-2">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-period">March 2026 — Present</p>
+                <p class="timeline-role">Full Stack Developer</p>
+                <p class="timeline-company">Code Alpha · Remote</p>
+                <p class="timeline-desc">
+                  Building full-stack web applications with modern JavaScript frameworks, REST APIs, and cloud-ready deployment workflows. Collaborating with product teams to connect design intent with stable production delivery.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-period">Jan 2026 — Present</p>
+                <p class="timeline-role">Administrative Officer & Customer Support</p>
+                <p class="timeline-company">Waysdrop · Ibadan, Nigeria</p>
+                <p class="timeline-desc">
+                  Managing office operations, client communications, and internal documentation. Streamlined workflows and built a reputation for reliable problem-solving in a fast-paced logistics environment.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-period">Jan 2026 — June 2026</p>
+                <p class="timeline-role">IT Support Intern</p>
+                <p class="timeline-company">IITA (International Institute of Tropical Agriculture) · Ibadan</p>
+                <p class="timeline-desc">
+                  Provided technical support and digital operations assistance. Maintained documentation and collaborated with teams to improve system reliability and workflow efficiency across departments.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-period">June 2025 — Present</p>
+                <p class="timeline-role">Freelance UI/UX Designer</p>
+                <p class="timeline-company">Self-Employed · Remote</p>
+                <p class="timeline-desc">
+                  Designing user-centred digital interfaces for clients across various industries — applying design systems thinking, Figma prototyping, and accessibility principles to deliver functional, polished products on time.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p class="timeline-period">June 2023 — December 2024</p>
+                <p class="timeline-role">Store Manager</p>
+                <p class="timeline-company">Dominion Tycoon Enterprises · Ibadan</p>
+                <p class="timeline-desc">
+                  Supervised daily business operations, inventory management, and staff coordination. Managed customer relations and resolved operational issues effectively.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <aside class="resume-panel reveal reveal-delay-2">
+            <div class="resume-info-card">
+              <h4>Education</h4>
+              <div class="edu-card">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-info">
+                  <strong>B.Sc. Computer Science</strong>
+                  <span>University of Ibadan · 2026</span>
+                </div>
+              </div>
+              <div class="edu-card">
+                <div class="edu-icon">💻</div>
+                <div class="edu-info">
+                  <strong>Full Stack Web Development</strong>
+                  <span>Udemy Certificate</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-info-card">
+              <h4>Certifications</h4>
+              <div class="cert-list">
+                <div class="cert-item"><div class="cert-icon">📋</div>Project Management Basics</div>
+                <div class="cert-item"><div class="cert-icon">🖥️</div>UI/UX Design Training</div>
+                <div class="cert-item"><div class="cert-icon">🏅</div>Udemy Full Stack Certificate</div>
+                <div class="cert-item"><div class="cert-icon">✨</div>Volunteering & Leadership</div>
+              </div>
+            </div>
+
+            <div class="resume-info-card">
+              <h4>Contact</h4>
+              <div class="cert-list">
+                <div class="cert-item"><div class="cert-icon">📍</div>Ibadan, Oyo State, Nigeria</div>
+                <div class="cert-item"><div class="cert-icon">📱</div>+234 815 991 2255</div>
+                <div class="cert-item"><div class="cert-icon">✉️</div>olowuadeyinka97@gmail.com</div>
+              </div>
+            </div>
+
+            <a class="btn btn-primary resume-dl-btn" href="resume.html">↓ &nbsp;Download Full CV</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="skills-inner">
+          <div>
+            <p class="section-label reveal">Capabilities</p>
+            <h2 class="section-title reveal reveal-delay-1">
+              The skills behind<br>every <em>detail.</em>
+            </h2>
+            <div class="skills-grid">
+              <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-card-icon">✦</div>
+                <h4>Interface Design</h4>
+                <p>Pixel-precise visual systems, typography hierarchies, spacing grids, and subtle motion.</p>
+              </div>
+              <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-card-icon">◎</div>
+                <h4>Interaction Design</h4>
+                <p>Micro-animations, component state logic, and user-flow architecture.</p>
+              </div>
+              <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-card-icon">🎨</div>
+                <h4>Graphic Design</h4>
+                <p>Brand systems, visual hierarchy, colour, and layout for polished digital products.</p>
+              </div>
+              <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-card-icon">⟨/⟩</div>
+                <h4>Front-End Engineering</h4>
+                <p>Semantic HTML, scalable CSS, responsive layouts, and clean JavaScript.</p>
+              </div>
+              <div class="skill-card reveal reveal-delay-1" style="grid-column: span 2 / -1;">
+                <div class="skill-card-icon">◈</div>
+                <h4>Product Thinking</h4>
+                <p>Feature scoping, usability testing, design validation, and iterative delivery with user outcomes at the centre.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="proficiency-list reveal reveal-delay-2">
+            <h3>Proficiency</h3>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">Figma / Prototyping</span>
+                <span class="prof-pct">92%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.92"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">HTML & CSS</span>
+                <span class="prof-pct">88%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.88"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">JavaScript</span>
+                <span class="prof-pct">74%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.74"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">UX Research</span>
+                <span class="prof-pct">80%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.80"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">Graphic Design</span>
+                <span class="prof-pct">85%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.85"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-item-header">
+                <span class="prof-name">React</span>
+                <span class="prof-pct">68%</span>
+              </div>
+              <div class="prof-bar-bg"><div class="prof-bar-fill" data-width="0.68"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <p class="section-label">Contact</p>
+            <h2 class="section-title" style="max-width:440px">
+              Let's build<br>something <em>remarkable.</em>
+            </h2>
+            <p>
+              I'm open to freelance projects, contract engagements, and remote full-time roles. Send a note with your goals, timeline, and the problem you want to solve — I'll respond within 24 hours.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:olowuadeyinka97@gmail.com" class="contact-link">
+                <div class="contact-link-icon">✉️</div>
+                olowuadeyinka97@gmail.com
+              </a>
+              <a href="tel:+2348159912255" class="contact-link">
+                <div class="contact-link-icon">📱</div>
+                +234 815 991 2255
+              </a>
+              <a href="https://wa.me/2348159912255?text=Hello%20Olowu%2C%20I%27d%20like%20to%20connect%20about%20a%20project." target="_blank" rel="noopener noreferrer" class="contact-link">
+                <div class="contact-link-icon">💬</div>
+                WhatsApp Chat
+              </a>
+              <a href="https://www.linkedin.com/in/olowu-adeyinka-227a40269/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <div class="contact-link-icon">💼</div>
+                LinkedIn Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal-delay-2">
+            <form class="contact-form" id="contact-form"
+              action="https://formsubmit.co/ajax/olowuadeyinka97@gmail.com"
+              method="POST"
+              novalidate>
+              <input type="hidden" name="_subject" value="Portfolio Inquiry — New Message" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Project type or opportunity" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, timeline, and goals." required></textarea>
+              </div>
+              <button class="btn btn-primary btn-large" type="submit" style="width:100%">Send Message →</button>
+              <p class="form-response" id="form-response" aria-live="polite" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">OA<span>.</span></p>
+      <p class="footer-copy">© 2026 Olowu Adeyinka Ayomide. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="luca-chat-widget" id="luca-chat-widget" aria-live="polite">
+    <button class="luca-chat-toggle" id="luca-chat-toggle" aria-expanded="false" aria-label="Open chat with Luca">
+      <span class="luca-chat-toggle__icon">💬</span>
+      <span>Luca</span>
+    </button>
+    <aside class="luca-chat-panel" id="luca-chat-panel" aria-hidden="true">
+      <div class="luca-chat-header">
+        <div>
+          <p class="luca-chat-title">Luca</p>
+          <p class="luca-chat-subtitle">AI guide for navigating the site</p>
+        </div>
+        <button class="luca-chat-close" id="luca-chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="luca-chat-body">
+        <div class="luca-chat-messages" id="luca-chat-messages">
+          <div class="luca-chat-message luca-chat-message--bot">
+            <p>Hi! I’m Luca. I can guide you to featured work, experience details, and the best ways to contact me.</p>
+          </div>
+        </div>
+        <div class="luca-chat-actions">
+          <button type="button" class="luca-chat-action" data-target="#work">View Work</button>
+          <button type="button" class="luca-chat-action" data-target="#experience">Experience</button>
+          <button type="button" class="luca-chat-action" data-target="#contact">Contact Info</button>
+        </div>
+        <form class="luca-chat-input-wrap" id="luca-chat-form">
+          <input class="luca-chat-input" id="luca-chat-input" type="text" placeholder="Ask me about the site or how to contact me..." aria-label="Ask Luca a question" autocomplete="off" />
+          <button type="submit" class="luca-chat-submit">Send</button>
+        </form>
+      </div>
+      <div class="luca-chat-footer">
+        <a href="mailto:olowuadeyinka97@gmail.com">Email</a>
+        <a href="https://wa.me/2348159912255?text=Hello%20Olowu%2C%20I%27d%20like%20to%20connect%20about%20a%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
